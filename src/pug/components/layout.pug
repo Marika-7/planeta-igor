@@ -1,0 +1,45 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+  title Хрещений батько
+  link(rel="shortcut icon" href="favicon.ico")
+
+  //- google fonts
+  link(rel="preconnect" href="https://fonts.googleapis.com")
+  link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+  link(href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet")
+
+  //- slick slider
+  //- link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/)
+  //- link(rel="stylesheet" type="text/css" href="assets/css/slick.css")
+  //- link(rel="stylesheet" type="text/css" href="assets/css/slick-theme.css")
+
+  //- my css
+  link(rel='stylesheet' href='assets/css/main.min.css')
+  //- link(rel='stylesheet' href='assets/css/main.css')
+  //- style svg{width: 18px;height: 18px;}
+
+body.montserrat
+  block header
+    include header
+  block content
+  block footer
+    include footer
+  block scripts
+
+    //- jquery
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js')
+    script(src='assets/js/jquery-3.7.1.min.js')
+
+    //- slick slider
+    //- script(src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='assets/js/slick.min.js')
+
+    //- google maps
+    //- script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap' async defer)
+
+    //- my js
+    script(src='assets/js/main.js')
+    //- script(src='assets/js/main.min.js')

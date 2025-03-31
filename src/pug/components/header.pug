@@ -1,0 +1,44 @@
+header.header#header
+  .content
+    block header-block 
+      include header-block 
+
+    button.burger_menu(type='button')
+      svg.burger_open(width='19' height='15' viewbox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M1.5 1.5H17.5M1.5 7.5H9.5M1.5 13.5H17.5' stroke='#E49C73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+      svg.burger_close.hide(width='23' height='24' viewbox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M5.84277 6.34277L17.1565 17.6565' stroke='#E49C73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+        path(d='M17.1572 6.34277L5.84352 17.6565' stroke='#E49C73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+
+.mobile_menu
+  nav.nav
+    ul
+      li
+        a.link_mobile(href='https://planeta-igr.com/ua/') Головна
+      li
+        a.link_mobile(href='#order') Купити 
+      li
+        a.link_mobile(href='#items') Вміст&nbsp;гри 
+      li
+        a.link_mobile(href='#rules') Правила 
+      li
+        a.link_mobile(href='#delivery') Виробництво 
+      li
+        a.link_mobile(href='#bulk-orders') Гурт 
+      li
+        a.link_mobile(href='#contact') Контакти 
+  
+  .header_contact 
+    a.phone(href="tel:0504891020") 
+      span.phone__img
+        img(src="assets/images/icon_phone.svg", alt="Phone") 
+      span.phone__number 050&nbsp;489&#8209;10&#8209;20
+    .social 
+      a(href='https://www.instagram.com/planetaigrcom/') 
+        img(src="assets/images/icon_instagram.svg", alt="instagram") 
+      a(href='https://www.tiktok.com/@planetaigrcom') 
+        img(src="assets/images/icon_tiktok.svg", alt="tiktok") 
+      a(href='https://www.facebook.com/planetaigr/') 
+        img(src="assets/images/icon_facebook.svg", alt="facebook") 
+      a(href='https://t.me/joinchat/AAAAAFcZ0PUDr8su7vFKOA') 
+        img(src="assets/images/icon_telegram.svg", alt="telegram") 

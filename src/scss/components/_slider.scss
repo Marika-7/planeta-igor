@@ -1,0 +1,102 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.slick-arrow{
+  width: 48px;
+  height: 48px;
+  background-color: $primary;
+  background-image: url('../images/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  position: absolute;
+  top: 165px;
+  z-index: 1;
+}
+
+.slick-arrow.slick-prev{
+  left: -16px;
+}
+
+.slick-arrow.slick-next{
+  transform: rotate(180deg);
+  right: -16px;
+}
+
+.slick-dots{
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+.slick-dots li{
+  width: 12px;
+  height: 12px;
+  border: 1px solid $secondary;
+  background-color: $secondary;
+  font-size: 0;
+  transition: all .3s;
+}
+
+.slick-dots li.slick-active{
+  background-color: transparent;
+}
+
+// ---------- slider ----------
+.slider {
+    position: relative;
+  // &__wrapper {}
+}
+.slide {
+  width: 380px;
+  margin: 0 auto;
+  position: relative;
+  @include screen-1280 {
+    margin: 0 10px;
+  }
+  // &_img {}
+  img {
+    width: 100%;
+  }
+}
+.caption_blue {
+  width: 332px;
+  height: 97px;
+  margin-top: -65px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  @include screen-1280 {
+    width: calc(100% - 40px);
+    height: 85px;
+    margin-top: -40px;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+.btn-play {
+  width: 119px;
+  height: 119px;
+  background-color: #00000040;
+  backdrop-filter: blur(16px);
+  box-shadow: 0px 0px 24px 0px $secondary inset;
+  background-image: url('../images/play-fill.svg');
+  background-position: center;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 60px);
+}

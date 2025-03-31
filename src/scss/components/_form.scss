@@ -1,0 +1,50 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.input {
+  width: 100%;
+  height: 70px;
+  padding: 18px 20px;
+  background: #0A0F120D;
+  border: 1px solid $gray;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  backdrop-filter: blur(12px);
+  caret-color: $primary;
+  &:focus {
+    border-color: $primary;
+    outline: 1px solid $primary;
+  }
+}
+
+textarea.input {
+  height: 160px;
+}
+
+::placeholder {
+  color: $white;
+}
+
+.label_phone {
+  width: 100%;
+  position: relative;
+  &::before {
+    content: url('../images/flags.svg');
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    z-index: 1;
+  }
+  .input {
+    padding-left: 52px;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0px 40rem #000000d8 inset;
+}

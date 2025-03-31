@@ -1,0 +1,294 @@
+extends components/layout
+
+block content
+  main.main
+
+    section.hero
+      .content
+        .block  
+          h1 Хрещений <br> батько
+          p.subtitle 
+            span.text-blue.text-bold Імперія Корлеоне (The Godfather: Corleone's Empire)
+            span  — це захоплива та атмосферна економічна євростратегія з високим рівнем конфліктності для 2-5 гравців від 14 років.
+          .block_blue Гравці очолять мафіозні сім’ї та поринуть у світ кримінальних розбірок, натхненний романом Маріо П’юзо «Хрещений батько» (The Godfather) та його легендарною екранізацією — культовою кінотрилогією Френсіса Форда Копполи. Гра переносить гравців саме до першої частини екранізації твору, де вони створюватимуть власні мафіозні імперії, розширюючи вплив у Нью-Йорку 50-х років. 
+          .row 
+            a.btn(href="#order") Передзамовлення
+            a.btn.btn-invert(href="#rules") Дізнатись більше
+
+    section.about
+      .content
+        h2 Про гру
+        .row
+          .block
+            .block_blue
+              h3 ВАЛІЗА — ОСНОВА НАТХНЕННЯ
+              p 
+                span Розробник настільної гри Хрещений батько. 
+                span.text-blue.texxt-bold Імперія Корлеоне — Ерік Ленг розповідаючи про створення настілки 
+                span зізнався, що основною причиною її виникнення є саме валізи з кінострічки. Адже це одна з його улюблених кінокартин, котру він передивляється кожні пару років та щоразу знаходить для себе щось нове. А його дружина оцінила фільм фразою: «Знято так, немов це масляні картини, що ожили».
+            p.text-simple «Хрещений батько» (The Godfather) — це найкращий гангстерський фільм за версією Американського інституту кіномистецтва, його включено до переліку найвидатніших фільмів в історії кінематографа.
+
+            button.link-read(href="#") Читати повністю
+          .block_img 
+            img(src="assets/images/about_photo.webp", alt="Game")
+
+    section.mechanic
+      .content
+        .row 
+          .block_img 
+            img(src="assets/images/mechanic_photo.webp", alt="Photo")
+          .block 
+            h2 МЕХАНІКИ ГРИ
+            p.text-simple В основу гри закладена продумана, динамічна та конфліктна механіка розміщення робітників (worker placement), доповнена жорсткими розправами та інтригами. 
+            p.text-simple Важливу роль відіграє управління картами (hand management), адже кількість доступних карт обмежена, а кожні п’ять раундів доведеться віддавати частку своєї «здобичі» дону.
+            .block_blue 
+              p 
+                span.text-blue.texxt-bold Ще одна особливість гри — 
+                span перестрілки: ліквідовані бійці не просто зникають, а відправляються на дно річки, і повернути їх можна лише ціною цінних карт, які дають гроші, контракти та унікальні можливості.
+
+    section.order.content#order
+      .row 
+        .block 
+          h2 ПЕРЕД&shy;ЗАМОВЛЕННЯ
+          h4.awards Нагороди:
+          ul 
+            li 2017 – Golden Geek Best Thematic Board Game Nominee
+            li 2018 – Origins Awards Best Board Game Nominee
+          .rating 
+            p.text-orange Рейтинг BGG
+            span.quadratic 7.5
+          .block_blue 
+            p 
+              span.text-bold Хрещений батько. Імперія Корлеоне 
+              br 
+              span (The Godfather: Corleone's Empire)
+            .price_old 3099 грн
+            .price_new  2399 грн
+          .row 
+            button.btn Варіанти передзамовлення
+            button.btn.btn-invert Дізнатись більше
+            //- a.btn.btn-invert(href="#") Дізнатись більше
+        .block_img 
+          img(src="assets/images/order_photo.webp", alt="Photo")
+
+    section.rules.content#rules
+
+      details.details.block_blue
+        summary.summary
+          h3 Правила гри
+        .row 
+          .block 
+            h4 Майстерність деталей і оригінальні компоненти
+            p 
+              span.text-blue Ця гра здивує навіть найвибагливіших гравців. 
+              span У комплекті понад три десятки деталізованих мініатюр. Якщо звичайні гангстери виглядають як класичні однакові бандити з «томмі-ганами» у руці, то всі інші фігурки — дони, консильєрі та спадкоємці — унікальні.
+            p Дон Віто Корлеоне використовується як лічильник раундів, поліцейська машина позначає поточну фазу, а жетон першого гравця виконаний у вигляді відрізаної кінської голови. 
+            p 
+              span.text-blue Але справжня родзинка гри — стильні металеві валізи для зберігання відмитих грошей та виконаних доручень. 
+              span Вони виконують функцію ширм, але при цьому виглядають розкішно, зручно використовуються та додають грі ще більше атмосферності.
+            button.download Завантажити PDF правила
+          .block_img 
+            img.img_first(src="assets/images/rules_photo_1.webp", alt="Photo")
+
+      details.details.block_blue 
+        summary.summary.title 
+          h3 МЕТА ГРИ
+        .row 
+          .block 
+            p Мета гри — побудувати найвпливовішу мафіозну імперію та накопичити найбільше статків до кінця партії. Гравці змагаються за контроль над Нью-Йорком, використовуючи механіки розміщення робітників, управління картами, виконання контрактів і усунення конкурентів. 
+            p.text-blue У фіналі перемога дістанеться тому, хто зуміє накопичити найбільше багатств, адже в кримінальному світі все вирішують гроші.  
+          .block_img 
+            img.img_second(src="assets/images/rules_photo_2.webp", alt="Photo")
+            
+      details.details.block_blue
+        summary.summary.title 
+          h3 ПРАВИЛА ТА ХІД ГРИ
+        .row.row_third 
+          p Кожен раунд відкриває нову локацію на мапі. Гравці ходять по черзі, розміщують мініатюри, використовують карти союзників або виконують доручення дона. Коли в запасі не залишається фігурок, гравець змушений пасувати.
+          .block 
+            h4 Раунди поділені на 5 фаз:
+            dl.dl 
+              dt.dt Відкриття локації.
+              dd.dd Просто викладіть плитку нової локації на ігрове поле.
+              dt.dt Сімейна справа. 
+              dd.dd Ця фаза полягає у зборі данини з локацій шляхом розіграшу громила та членів сімей, а також виконання доручень дона Корлеоне. Скиньте зазначені нелегальні товари, отримайте винагороду та застосуйте ефект карти.  
+              dt.dt Війна за райони. 
+              dd.dd Гравець із найбільшою присутністю членів сім’ї на відповідній території встановлює свій маркер домінування.
+              dt.dt Підкуп. 
+              dd.dd Гравці роблять ставки, аби отримати підтримку впливових персон та залучити до своїх сімей нових спільників тощо.
+              dt.dt Данина Донові. 
+              dd.dd Гравці віддають дону Корлеоне зайві карти, повертають фігурки в резерв та оновлюють ринок доручень і союзників.
+          .block_img 
+            img.img_third(src="assets/images/about_photo.webp", alt="Photo")
+            
+      details.details.block_blue 
+        summary.summary.title 
+          h3 КІНЕЦЬ ГРИ
+        .row 
+          .block 
+            p Гра завершується після чотирьох раундів. Перемагає той, хто накопичив найбільше грошей. Додаткові бали можна отримати за контроль над районами та виконання доручень одного кольору.
+            p.text-blue Завойовуйте Нью-Йорк, використовуйте хитрість і силу, маніпулюйте та будуйте кримінальну імперію, адже тут перемагає лише найвпливовіший!
+          .block_img 
+            img.img_fourth(src="assets/images/rules_photo_4.webp", alt="Photo")
+
+    section.items.content#items
+      h2 ВМІСТ ГРИ
+      .items__wrapper
+
+        .items__block.items__block_1
+          .item.item_1 
+            img(src="assets/images/item_1.webp", alt="Item")
+            .caption_orange Ігрове поле
+          .item.item_2 
+            img(src="assets/images/item_2.webp", alt="Item")
+            .caption_orange Правила гри
+          .item.item_3 
+            img(src="assets/images/item_3.webp", alt="Item")
+            .caption_orange 32 нелегальні карти товарів
+              span (Зброя, алкоголь, брудні гроші, наркотики)
+          .item.item_4 
+            img(src="assets/images/item_4.webp", alt="Item")
+            .caption_orange 120 банкнот
+              span Номінали 1$, 2$, 3$, 5$
+
+        .items__block.items__block_2
+          .item.item_5 
+            img(src="assets/images/item_5.webp", alt="Item")
+            .caption_orange 18 карт спільників
+              span (Поділені на 3 раунди)
+          .item.item_6 
+            img(src="assets/images/item_6.webp", alt="Item")
+            .caption_orange 44 карти доручень
+          .item.item_7 
+            img(src="assets/images/item_7.webp", alt="Item")
+            .caption_orange 1 жетон
+              span Авто поліції
+          .item.item_8 
+            img(src="assets/images/item_8.webp", alt="Item")
+            .caption_orange 1 жетон
+              span Голови коня
+
+        .items__block.items__block_3
+          .item.item_9 
+            img(src="assets/images/item_9.webp", alt="Item")
+            .caption_orange 45 маркерів контролю
+              span по 5 кожного кольору
+          .item.item_10 
+            img(src="assets/images/item_10.webp", alt="Item")
+            .caption_orange 5 металевих валіз
+          .item.item_11 
+            img(src="assets/images/item_11.webp", alt="Item")
+            .caption_orange 12 плиток локацій
+
+        .items__block.items__block_4
+          .item.item_12 
+            img(src="assets/images/item_12.webp", alt="Item")
+            .caption_orange Спільники
+              span (Шеф поліції, мер, <br>бом профспілки)
+          .item.item_13 
+            img(src="assets/images/item_13.webp", alt="Item")
+            .caption_orange Сім’я Піцціно
+          .item.item_14 
+            img(src="assets/images/item_14.webp", alt="Item")
+            .caption_orange Сім’я Матараццо
+          .item.item_15 
+            img(src="assets/images/item_15.webp", alt="Item")
+            .caption_orange Дон Віто <br>Карлеоне
+          .item.item_16 
+            img(src="assets/images/item_16.webp", alt="Item")
+            .caption_orange Сім’я Каккамо
+          .item.item_17 
+            img(src="assets/images/item_17.webp", alt="Item")
+            .caption_orange Сім’я Вітале
+
+    section.video.content
+      h2 ВІДЕООГЛЯДИ
+      block components/slider
+        include components/slider
+
+    section.delivery.content#delivery
+      .row 
+        .block 
+          h2 ВИРОБНИЦТВО ТА ДОСТАВКА
+          p Гра вже надрукована та прямує до України на наш склад! 
+          p.text-blue Гра очікується в середині квітня 2025 року! 
+          p.text-simple Надсилання передзамовлень відбуватиметься Новою Поштою / УкрПоштою / Meest Поштою / на точку видачі Розетка нашим коштом! 
+          .block_blue 
+            p 
+              span Можливий 
+              span.text-bold самовивіз 
+              span в Одесі (вул. Новосельського, 100 або вул. Садова, 9)
+            p 
+              span Акційна пропозиція на гру зі знижкою 
+              span.text-bold 20% 
+              span триватиме 
+              span.text-bold до 15-го квітня 2025 року. 
+              span Отже, встигніть придбати відому гру за найвигіднішою ціною! 
+          a.btn(href="#bulk-orders") Оформити передзамовлення
+        .block_img 
+          img(src="assets/images/delivery_photo.webp", alt="Photo")
+
+    .section_bg
+
+      section.bulk-orders#bulk-orders
+        .content
+          h2 Гуртові замовлення
+          .row 
+            .block_blue 
+              p Планета Ігор - ексклюзивний гуртовий постачальник гри Хрещений батько. Імперія Корлеоне (The Godfather: Corleone's Empire) на території України! 
+              p В нашому прайс-листі доступні ще понад 2000 позицій. Заповнюйте форму та отримуйте гуртові умови співпраці.
+            form
+              .block 
+                input.input#shop(type="text" name='shop' placeholder="Ваш магазин" required)
+                input.input#name(type="text" name='name' placeholder="Ваше ім'я" required)
+                textarea.input#comment(name='comment' placeholder="Ваш комментар" required)
+                label.label_phone
+                  input.input#name(type="tel" name='phone' placeholder="+380 (99) 999-99-99" required)
+                button.btn(type="submit") Оформити замовлення
+
+      section.contact#contact
+        .content
+          .row 
+            .block
+              h2 Контакти
+              .block_blue 
+                ul.contact_ul 
+                  li.contact_li
+                    span 050 489-10-20
+                  li.contact_li
+                    span info@planeta-igr.com
+                  li.contact_li
+                    div
+                      span.text-bold Магазин "Планета Ігор" - 
+                      span м. Одеса, вул. Новосельского, 100
+                  li.contact_li
+                    div
+                      span.text-bold Клуб-магазин "Планета Ігор" - 
+                      span м. Одеса, вул. Садова, 9
+                .contact_social 
+                  a(href='https://www.instagram.com/planetaigrcom/' target="_blank") 
+                    img(src="assets/images/icon_instagram-fill.svg", alt="instagram") 
+                  a(href='https://t.me/joinchat/AAAAAFcZ0PUDr8su7vFKOA' target="_blank") 
+                    img(src="assets/images/icon_telegram_2.svg", alt="telegram") 
+                  a(href='viber://chat?number=%2B380504891020' target="_blank") 
+                    img(src="assets/images/icon_viber.svg", alt="viber") 
+                  a(href='https://www.facebook.com/planetaigr/' target="_blank") 
+                    img(src="assets/images/icon_facebook-fill.svg", alt="facebook") 
+            
+            block components/map
+              include components/map
+
+    section.telegram
+      .content
+        .row
+          h2 ТЕЛЕГРАМ КАНАЛ
+          .block_img
+            picture 
+              source(media="(max-width:480px)" srcset="assets/images/telegram_photo_small.webp")
+              img(src="assets/images/telegram_photo.webp", alt="Photo")
+          .block 
+            .block_blue 
+              p Наш Телеграм канал Клубу, магазину та видавництва. Підпишіться і будете завжди першими дізнаватись про останні новини Планетки!
+            a.btn(href="https://t.me/joinchat/AAAAAFcZ0PUDr8su7vFKOA" target="_blank") Підписатися
+
+    a.btn-up.hide#btn-up(href="#header")

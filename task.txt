@@ -1,0 +1,22 @@
+-------------------- task --------------------
+
+  map - add buttons
+
+-------------------- npm --------------------
+
+  npm init
+  npm install --save-dev gulp
+
+  npm install --save-dev gulp-pug
+  npm install --save-dev sass gulp-sass
+  npm install --save-dev gulp-autoprefixer
+  npm install --save-dev gulp-babel @babel/core @babel/preset-env
+  npm install --save-dev gulp-concat gulp-uglify
+  npm install --save-dev browser-sync gulp-clean
+  npm install --save-dev gulp-imagemin gulp-webp gulp-newer
+  npm install --save-dev gulp-ttf2woff2
+
+      npm i -D gulp-svg-sprite
+      npm i -D gulp-fonter
+
+--------------------  --------------------
