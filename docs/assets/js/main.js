@@ -40,3 +40,14 @@ $(document).ready(function () {
     }]
   });
 });
+
+// ---------- input phone ----------
+document.getElementById('phone').addEventListener('input', function (e) {
+  var value = e.target.value.replace(/\D/g, "");
+  if (value.startsWith("380")) {
+    value = "+" + value;
+  } else {
+    value = "+380" + value;
+  }
+  e.target.value = value.replace(/\+(\d{3})(\d{0,2})(\d{0,3})(\d{0,2})(\d{0,2})/, "+$1 ($2) $3-$4-$5");
+});
