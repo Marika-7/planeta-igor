@@ -33,6 +33,46 @@ $(document).ready(function () {
     }
   });
 
+  // ---------- cart ----------
+  $('#add_to_cart').on('click', function () {
+    var count = parseInt($('#cart_count').text());
+    count++;
+    $('#cart_count').text(count);
+    $('#btn-cart').removeClass('hide');
+
+    // Створюємо копію зображення
+    var imgClone = $('#img_game').clone();
+    imgClone.attr('id', 'img_game_clone');
+
+    // Встановлюємо початкові стилі для копії
+    imgClone.css({
+      position: 'absolute',
+      top: $('#img_game').offset().top,
+      left: $('#img_game').offset().left,
+      width: $('#img_game').width(),
+      height: $('#img_game').height(),
+      zIndex: 9999
+    });
+
+    // Додаємо копію на сторінку
+    $('body').append(imgClone);
+
+    // Анімація переміщення
+    imgClone.animate({
+      top: $('#btn-cart').offset().top,
+      left: $('#btn-cart').offset().left,
+      width: 50,
+      height: 50,
+      opacity: 0.5
+    }, 500, function () {
+      // Видаляємо копію після завершення анімації
+      $(this).remove();
+    });
+  });
+
+  // Додати обробник кліку для кнопки корзина
+  $('#btn-cart').on('click', function () {});
+
   // ---------- slider setting ----------
   $('.slider').slick({
     dots: true,

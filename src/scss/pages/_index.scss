@@ -287,8 +287,8 @@
       justify-self: center;
     }
   }
-  // .block .row  {
-  //   margin-top: 44px;
+  .block .row  {
+    margin-top: 44px;
   //   @include screen-1024 {
   //     flex-direction: column;
   //   }
@@ -298,20 +298,20 @@
   //   @include screen-480 {
   //     flex-direction: column;
   //   }
-  // }
-  // .btn {
-  //   width: 289px;
-  //   padding: 18px;
-  //   @include screen-1280 {
-  //     width: 270px;
-  //   }
-  //   @include screen-768 {
-  //     width: 50%;
-  //   }
-  //   @include screen-480 {
-  //     width: 100%;
-  //   }
-  // }
+  }
+  .btn {
+    width: 300px;
+    padding: 18px;
+    @include screen-1024 {
+      width: 270px;
+    }
+    // @include screen-768 {
+    //   width: 50%;
+    // }
+    @include screen-640 {
+      width: 100%;
+    }
+  }
   // .btn-invert {
   //   width: 271px;
   //   @include screen-1280 {

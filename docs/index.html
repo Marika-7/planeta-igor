@@ -11,7 +11,7 @@
 </head>
 <body class="montserrat">
   <header class="header" id="header">
-    <div class="content"><a class="logo" href="https://planeta-igr.com/ua/"> <img src="assets/images/logo.svg" alt="Logo"></a>
+    <div class="content"><a class="logo" href="#"> <img src="assets/images/logo.svg" alt="Logo"></a>
       <nav class="nav">
         <ul>
           <li><a href="https://planeta-igr.com/ua/">Головна</a></li>
@@ -60,7 +60,7 @@
           <h1>Хрещений <br> батько</h1>
           <p class="subtitle"> <span class="text-blue text-bold">Імперія Корлеоне (The Godfather: Corleone's Empire)</span><span> — це захоплива та атмосферна економічна євростратегія з високим рівнем конфліктності для 2-5 гравців від 14 років.</span></p>
           <div class="block_blue">Гравці очолять мафіозні сім’ї та поринуть у світ кримінальних розбірок, натхненний романом Маріо П’юзо «Хрещений батько» (The Godfather) та його легендарною екранізацією — культовою кінотрилогією Френсіса Форда Копполи. Гра переносить гравців саме до першої частини екранізації твору, де вони створюватимуть власні мафіозні імперії, розширюючи вплив у Нью-Йорку 50-х років. </div>
-          <div class="row"> <a class="btn" href="#order">Передзамовлення</a><a class="btn btn-invert" href="#rules">Дізнатись більше</a></div>
+          <div class="row"> <a class="btn" href="#order">Замовлення</a><a class="btn btn-invert" href="#rules">Дізнатись більше</a></div>
         </div>
       </div>
     </section>
@@ -71,7 +71,7 @@
           <div class="block">
             <div class="block_blue">
               <h3>ВАЛІЗА — ОСНОВА НАТХНЕННЯ</h3>
-              <p> <span>Розробник настільної гри Хрещений батько. </span><span class="text-blue texxt-bold">Імперія Корлеоне — Ерік Ленг розповідаючи про створення настілки </span><span>зізнався, що основною причиною її виникнення є саме валізи з кінострічки. Адже це одна з його улюблених кінокартин, котру він передивляється кожні пару років та щоразу знаходить для себе щось нове. А його дружина оцінила фільм фразою: «Знято так, немов це масляні картини, що ожили».</span></p>
+              <p> <span>Розробник настільної гри </span><span class="text-blue text-bold">Хрещений батько. Імперія Корлеоне </span><span>— Ерік Ленг розповідаючи про створення настілки зізнався, що основною причиною її виникнення є саме валізи з кінострічки. Адже це одна з його улюблених кінокартин, котру він передивляється кожні пару років та щоразу знаходить для себе щось нове. А його дружина оцінила фільм фразою: «Знято так, немов це масляні картини, що ожили».</span></p>
             </div>
             <div class="block_text">
               <p class="text-simple">«Хрещений батько» (The Godfather) — це найкращий гангстерський фільм за версією Американського інституту кіномистецтва, його включено до переліку найвидатніших фільмів в історії кінематографа.</p>
@@ -119,8 +119,11 @@
             <div class="price_old">3099 грн</div>
             <div class="price_new"> 2399 грн</div>
           </div>
+          <div class="row"> 
+            <button class="btn" id="add_to_cart">Замовлення</button>
+          </div>
         </div>
-        <div class="block_img"> <img src="assets/images/order_photo.webp" alt="Photo"></div>
+        <div class="block_img"><img id="img_game" src="assets/images/order_photo.webp" alt="Photo"></div>
       </div>
     </section>
     <section class="rules content" id="rules">
@@ -375,10 +378,11 @@
           </div>
         </div>
       </div>
-    </section><a class="btn-up hide" id="btn-up" href="#header"></a>
+    </section>
+    <button class="btn-cart hide" id="btn-cart"> <span class="cart_count" id="cart_count">0</span></button><a class="btn-up hide" id="btn-up" href="#header"></a>
   </main>
   <footer class="header">
-    <div class="content"><a class="logo" href="https://planeta-igr.com/ua/"> <img src="assets/images/logo.svg" alt="Logo"></a>
+    <div class="content"><a class="logo" href="#"> <img src="assets/images/logo.svg" alt="Logo"></a>
       <nav class="nav">
         <ul>
           <li><a href="https://planeta-igr.com/ua/">Головна</a></li>

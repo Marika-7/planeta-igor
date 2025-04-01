@@ -97,29 +97,67 @@
   }
 }
 
-.btn-up {
+.btn-up, 
+.btn-cart {
   display: inline-block;
   width: 75px;
   height: 75px;
   background-color: $primary;
-  background-image: url('../images/arrow-up.svg');
-  background-size: 50px 50px;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 1;
   transition: all .3s;
   position: fixed;
-  bottom: 120px;
   right: 20px;
   z-index: 5;
   @include screen-1024 {
     width: 60px;
     height: 60px;
+  }
+  &:hover {
+    background-color: $hover;
+  }
+}
+
+.btn-up {
+  background-image: url('../images/arrow-up.svg');
+  background-size: 50px 50px;
+  bottom: 120px;
+  @include screen-1024 {
     background-size: 40px 40px;
   }
 }
 
-.btn-up.hide {
+.btn-cart {
+  background-image: url('../images/cart.svg');
+  background-size: 30px 30px;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include screen-1024 {
+    background-size: 40px 40px;
+  }
+}
+
+.cart_count {
+  border-radius: 50%;
+  background: $primary;
+  border: 1px solid $black;
+  color: $black;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+  top: -15px;
+  left: 10px;
+}
+
+.btn-up.hide, 
+.btn-cart.hide {
   display: none;
   opacity: 0;
 }

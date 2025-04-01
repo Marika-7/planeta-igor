@@ -36,15 +36,18 @@
   ul {
     display: flex;
     align-items: center;
-    gap: 16px 32px;
+    gap: 16px 24px;
     flex-wrap: wrap;
     @include screen-1024 {
       gap: 16px;
     }
   }
   // li {}
-  a:hover {
-    color: $primary;
+  a {
+    font-size: 16px;
+    &:hover {
+      color: $primary;
+    }
   }
 }
 
@@ -67,6 +70,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all .3s;
+      &:hover {
+        transform: scale(1.1);
+      }
       // img {}
     }
     &__number {
@@ -86,6 +93,10 @@
     gap: 18px;
     a {
       height: 16px;
+      transition: all .3s;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
 }
