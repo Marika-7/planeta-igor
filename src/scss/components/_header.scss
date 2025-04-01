@@ -17,6 +17,10 @@
   }
   .logo {
     height: 73px;
+    transition: all .3s;
+    &:hover {
+      transform: scale(1.1);
+    }
     @include screen-1024 {
       height: 57px;
     }

@@ -73,8 +73,15 @@
               <h3>ВАЛІЗА — ОСНОВА НАТХНЕННЯ</h3>
               <p> <span>Розробник настільної гри Хрещений батько. </span><span class="text-blue texxt-bold">Імперія Корлеоне — Ерік Ленг розповідаючи про створення настілки </span><span>зізнався, що основною причиною її виникнення є саме валізи з кінострічки. Адже це одна з його улюблених кінокартин, котру він передивляється кожні пару років та щоразу знаходить для себе щось нове. А його дружина оцінила фільм фразою: «Знято так, немов це масляні картини, що ожили».</span></p>
             </div>
-            <p class="text-simple">«Хрещений батько» (The Godfather) — це найкращий гангстерський фільм за версією Американського інституту кіномистецтва, його включено до переліку найвидатніших фільмів в історії кінематографа.</p>
-            <button class="link-read" href="#">Читати повністю</button>
+            <div class="block_text">
+              <p class="text-simple">«Хрещений батько» (The Godfather) — це найкращий гангстерський фільм за версією Американського інституту кіномистецтва, його включено до переліку найвидатніших фільмів в історії кінематографа.</p>
+              <button class="read_btn" id="read_show">Читати повністю</button>
+              <div class="text_hide" id="text_hide">
+                <p class="text-simple">Кінострічка була відзначена трьома преміями «Оскар»: як найкращий фільм року, за найкращий адаптований сценарій та найкращу чоловічу роль, а також має 19 інших нагород і 17 номінацій. </p>
+                <p class="text-simple">Зйомки тривали чотири місяці в 1971 році, а прем’єра відбулася в березні 1972-го. Бюджет склав 6 мільйонів доларів, а світовий прокат приніс 268,5 мільйона. Згідно з рейтингами станом на 1 березня 2024 року він утримує 2-ге місце у списку 250 найкращих фільмів за версією IMDb, а також знаходиться на 2-й сходинці списку найкращих фільмів в історії американського кінематографа.</p>
+                <button class="read_btn" id="read_hide">Сховати</button>
+              </div>
+            </div>
           </div>
           <div class="block_img"> <img src="assets/images/about_photo.webp" alt="Game"></div>
         </div>
@@ -98,92 +105,90 @@
     <section class="order content" id="order">
       <div class="row"> 
         <div class="block"> 
-          <h2>ПЕРЕД&shy;ЗАМОВЛЕННЯ</h2>
+          <h2>ЗАМОВЛЕННЯ</h2>
           <h4 class="awards">Нагороди:</h4>
           <ul> 
             <li>2017 – Golden Geek Best Thematic Board Game Nominee</li>
             <li>2018 – Origins Awards Best Board Game Nominee</li>
           </ul>
           <div class="rating"> 
-            <p class="text-orange">Рейтинг BGG</p><span class="quadratic">7.5</span>
+            <p><span class="text-orange">Рейтинг BGG </span><span> (понад 8 тисяч відгуків)</span></p><span class="quadratic">7.5</span>
           </div>
           <div class="block_blue"> 
             <p> <span class="text-bold">Хрещений батько. Імперія Корлеоне </span><br><span>(The Godfather: Corleone's Empire)</span></p>
             <div class="price_old">3099 грн</div>
             <div class="price_new"> 2399 грн</div>
           </div>
-          <div class="row"> 
-            <button class="btn">Варіанти передзамовлення</button>
-            <button class="btn btn-invert">Дізнатись більше</button>
-          </div>
         </div>
         <div class="block_img"> <img src="assets/images/order_photo.webp" alt="Photo"></div>
       </div>
     </section>
     <section class="rules content" id="rules">
-      <details class="details block_blue">
-        <summary class="summary">
-          <h3>Правила гри</h3>
-        </summary>
-        <div class="row"> 
-          <div class="block"> 
-            <h4>Майстерність деталей і оригінальні компоненти</h4>
-            <p> <span class="text-blue">Ця гра здивує навіть найвибагливіших гравців. </span><span>У комплекті понад три десятки деталізованих мініатюр. Якщо звичайні гангстери виглядають як класичні однакові бандити з «томмі-ганами» у руці, то всі інші фігурки — дони, консильєрі та спадкоємці — унікальні.</span></p>
-            <p>Дон Віто Корлеоне використовується як лічильник раундів, поліцейська машина позначає поточну фазу, а жетон першого гравця виконаний у вигляді відрізаної кінської голови. </p>
-            <p> <span class="text-blue">Але справжня родзинка гри — стильні металеві валізи для зберігання відмитих грошей та виконаних доручень. </span><span>Вони виконують функцію ширм, але при цьому виглядають розкішно, зручно використовуються та додають грі ще більше атмосферності.</span></p>
-            <button class="download">Завантажити PDF правила</button>
+      <h2>Правила гри</h2>
+      <div class="rules_wrapper">
+        <details class="details block_blue">
+          <summary class="summary">
+            <h3>Правила гри</h3>
+          </summary>
+          <div class="row"> 
+            <div class="block"> 
+              <h4>Майстерність деталей і оригінальні компоненти</h4>
+              <p> <span class="text-blue">Ця гра здивує навіть найвибагливіших гравців. </span><span>У комплекті понад три десятки деталізованих мініатюр. Якщо звичайні гангстери виглядають як класичні однакові бандити з «томмі-ганами» у руці, то всі інші фігурки — дони, консильєрі та спадкоємці — унікальні.</span></p>
+              <p>Дон Віто Корлеоне використовується як лічильник раундів, поліцейська машина позначає поточну фазу, а жетон першого гравця виконаний у вигляді відрізаної кінської голови. </p>
+              <p> <span class="text-blue">Але справжня родзинка гри — стильні металеві валізи для зберігання відмитих грошей та виконаних доручень. </span><span>Вони виконують функцію ширм, але при цьому виглядають розкішно, зручно використовуються та додають грі ще більше атмосферності.</span></p><a class="download" href="https://planeta-igr.com/image/data/instrukcii/94240.pdf" target="_blank">Завантажити PDF правила</a>
+            </div>
+            <div class="block_img"> <img class="img_first" src="assets/images/rules_photo_1.webp" alt="Photo"></div>
           </div>
-          <div class="block_img"> <img class="img_first" src="assets/images/rules_photo_1.webp" alt="Photo"></div>
-        </div>
-      </details>
-      <details class="details block_blue"> 
-        <summary class="summary title"> 
-          <h3>МЕТА ГРИ</h3>
-        </summary>
-        <div class="row"> 
-          <div class="block"> 
-            <p>Мета гри — побудувати найвпливовішу мафіозну імперію та накопичити найбільше статків до кінця партії. Гравці змагаються за контроль над Нью-Йорком, використовуючи механіки розміщення робітників, управління картами, виконання контрактів і усунення конкурентів. </p>
-            <p class="text-blue">У фіналі перемога дістанеться тому, хто зуміє накопичити найбільше багатств, адже в кримінальному світі все вирішують гроші.  </p>
+        </details>
+        <details class="details block_blue"> 
+          <summary class="summary title"> 
+            <h3>МЕТА ГРИ</h3>
+          </summary>
+          <div class="row"> 
+            <div class="block"> 
+              <p>Мета гри — побудувати найвпливовішу мафіозну імперію та накопичити найбільше статків до кінця партії. Гравці змагаються за контроль над Нью-Йорком, використовуючи механіки розміщення робітників, управління картами, виконання контрактів і усунення конкурентів. </p>
+              <p class="text-blue">У фіналі перемога дістанеться тому, хто зуміє накопичити найбільше багатств, адже в кримінальному світі все вирішують гроші.  </p>
+            </div>
+            <div class="block_img"> <img class="img_second" src="assets/images/rules_photo_2.webp" alt="Photo"></div>
           </div>
-          <div class="block_img"> <img class="img_second" src="assets/images/rules_photo_2.webp" alt="Photo"></div>
-        </div>
-      </details>
-      <details class="details block_blue">
-        <summary class="summary title"> 
-          <h3>ПРАВИЛА ТА ХІД ГРИ</h3>
-        </summary>
-        <div class="row row_third"> 
-          <p>Кожен раунд відкриває нову локацію на мапі. Гравці ходять по черзі, розміщують мініатюри, використовують карти союзників або виконують доручення дона. Коли в запасі не залишається фігурок, гравець змушений пасувати.</p>
-          <div class="block"> 
-            <h4>Раунди поділені на 5 фаз:</h4>
-            <dl class="dl"> 
-              <dt class="dt">Відкриття локації.</dt>
-              <dd class="dd">Просто викладіть плитку нової локації на ігрове поле.</dd>
-              <dt class="dt">Сімейна справа. </dt>
-              <dd class="dd">Ця фаза полягає у зборі данини з локацій шляхом розіграшу громила та членів сімей, а також виконання доручень дона Корлеоне. Скиньте зазначені нелегальні товари, отримайте винагороду та застосуйте ефект карти.  </dd>
-              <dt class="dt">Війна за райони. </dt>
-              <dd class="dd">Гравець із найбільшою присутністю членів сім’ї на відповідній території встановлює свій маркер домінування.</dd>
-              <dt class="dt">Підкуп. </dt>
-              <dd class="dd">Гравці роблять ставки, аби отримати підтримку впливових персон та залучити до своїх сімей нових спільників тощо.</dd>
-              <dt class="dt">Данина Донові. </dt>
-              <dd class="dd">Гравці віддають дону Корлеоне зайві карти, повертають фігурки в резерв та оновлюють ринок доручень і союзників.</dd>
-            </dl>
+        </details>
+        <details class="details block_blue">
+          <summary class="summary title"> 
+            <h3>ХІД ГРИ</h3>
+          </summary>
+          <div class="row row_third"> 
+            <p>Кожен раунд відкриває нову локацію на мапі. Гравці ходять по черзі, розміщують мініатюри, використовують карти союзників або виконують доручення дона. Коли в запасі не залишається фігурок, гравець змушений пасувати.</p>
+            <div class="block"> 
+              <h4>Раунди поділені на 5 фаз:</h4>
+              <dl class="dl"> 
+                <dt class="dt">Відкриття локації.</dt>
+                <dd class="dd">Просто викладіть плитку нової локації на ігрове поле.</dd>
+                <dt class="dt">Сімейна справа. </dt>
+                <dd class="dd">Ця фаза полягає у зборі данини з локацій шляхом розіграшу громила та членів сімей, а також виконання доручень дона Корлеоне. Скиньте зазначені нелегальні товари, отримайте винагороду та застосуйте ефект карти.  </dd>
+                <dt class="dt">Війна за райони. </dt>
+                <dd class="dd">Гравець із найбільшою присутністю членів сім’ї на відповідній території встановлює свій маркер домінування.</dd>
+                <dt class="dt">Підкуп. </dt>
+                <dd class="dd">Гравці роблять ставки, аби отримати підтримку впливових персон та залучити до своїх сімей нових спільників тощо.</dd>
+                <dt class="dt">Данина Донові. </dt>
+                <dd class="dd">Гравці віддають дону Корлеоне зайві карти, повертають фігурки в резерв та оновлюють ринок доручень і союзників.</dd>
+              </dl>
+            </div>
+            <div class="block_img"> <img class="img_third" src="assets/images/about_photo.webp" alt="Photo"></div>
           </div>
-          <div class="block_img"> <img class="img_third" src="assets/images/about_photo.webp" alt="Photo"></div>
-        </div>
-      </details>
-      <details class="details block_blue"> 
-        <summary class="summary title"> 
-          <h3>КІНЕЦЬ ГРИ</h3>
-        </summary>
-        <div class="row"> 
-          <div class="block"> 
-            <p>Гра завершується після чотирьох раундів. Перемагає той, хто накопичив найбільше грошей. Додаткові бали можна отримати за контроль над районами та виконання доручень одного кольору.</p>
-            <p class="text-blue">Завойовуйте Нью-Йорк, використовуйте хитрість і силу, маніпулюйте та будуйте кримінальну імперію, адже тут перемагає лише найвпливовіший!</p>
+        </details>
+        <details class="details block_blue"> 
+          <summary class="summary title"> 
+            <h3>КІНЕЦЬ ГРИ</h3>
+          </summary>
+          <div class="row"> 
+            <div class="block"> 
+              <p>Гра завершується після чотирьох раундів. Перемагає той, хто накопичив найбільше грошей. Додаткові бали можна отримати за контроль над районами та виконання доручень одного кольору.</p>
+              <p class="text-blue">Завойовуйте Нью-Йорк, використовуйте хитрість і силу, маніпулюйте та будуйте кримінальну імперію, адже тут перемагає лише найвпливовіший!</p>
+            </div>
+            <div class="block_img"> <img class="img_fourth" src="assets/images/rules_photo_4.webp" alt="Photo"></div>
           </div>
-          <div class="block_img"> <img class="img_fourth" src="assets/images/rules_photo_4.webp" alt="Photo"></div>
-        </div>
-      </details>
+        </details>
+      </div>
     </section>
     <section class="items content" id="items">
       <h2>ВМІСТ ГРИ</h2>
@@ -251,33 +256,40 @@
     </section>
     <section class="video content">
       <h2>ВІДЕООГЛЯДИ</h2>
-      <div class="slider__wrapper">
+      <div class="slider_wrapper">
         <div class="slider">
-          <div class="slide"><img data-lazy="assets/images/video_1.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/E5CaNOzDP1A?si=KSCwrJQCotU5nosN"><img class="slide_img" data-lazy="assets/images/video_1.webp" alt="Video"></div>
             <div class="caption_blue">Watch It Played</div>
             <button class="btn-play"> </button>
           </div>
-          <div class="slide"><img data-lazy="assets/images/video_2.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/mVz43Sb4NwM?si=lGcvpefo1-oYM0DW"><img class="slide_img" data-lazy="assets/images/video_2.webp" alt="Video"></div>
             <div class="caption_blue">Watch It Played</div>
             <button class="btn-play"> </button>
           </div>
-          <div class="slide"><img data-lazy="assets/images/video_3.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/1Tod0dMSp-w?si=An7Ii_CqoVTpGVgP"><img class="slide_img" data-lazy="assets/images/video_3.webp" alt="Video"></div>
             <div class="caption_blue">The Dice Tower</div>
             <button class="btn-play"> </button>
           </div>
-          <div class="slide"><img data-lazy="assets/images/video_4.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/n2dl27XP1HI?si=XnnM3hA9mAGsJzUW"><img class="slide_img" data-lazy="assets/images/video_4.webp" alt="Video"></div>
             <div class="caption_blue">The Dice Tower</div>
             <button class="btn-play"> </button>
           </div>
-          <div class="slide"><img data-lazy="assets/images/video_5.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/BGMPSU-B8AU?si=Ulq1a9NsGs3CdN4O"><img class="slide_img" data-lazy="assets/images/video_5.webp" alt="Video"></div>
             <div class="caption_blue">The Discriminating Gamer</div>
             <button class="btn-play"> </button>
           </div>
-          <div class="slide"><img data-lazy="assets/images/video_6.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/_4Rz200Fi6Q?si=_3HENdydC5m92QST"><img class="slide_img" data-lazy="assets/images/video_6.webp" alt="Video"></div>
             <div class="caption_blue">TheGameBoyGeek - Hi Quality Hi Energy Board Game Reviews</div>
             <button class="btn-play"> </button>
           </div>
-          <div class="slide"><img data-lazy="assets/images/video_7.webp" alt="Video">
+          <div class="slide">
+            <div class="slide_screen" data-video="https://www.youtube.com/embed/ZCkxWKZ5lBw?si=IIJ9DtdyjgH1qHyr"><img class="slide_img" data-lazy="assets/images/video_7.webp" alt="Video"></div>
             <div class="caption_blue">Man Vs Meeple</div>
             <button class="btn-play"> </button>
           </div>
@@ -288,13 +300,12 @@
       <div class="row"> 
         <div class="block"> 
           <h2>ВИРОБНИЦТВО ТА ДОСТАВКА</h2>
-          <p>Гра вже надрукована та прямує до України на наш склад! </p>
-          <p class="text-blue">Гра очікується в середині квітня 2025 року! </p>
-          <p class="text-simple">Надсилання передзамовлень відбуватиметься Новою Поштою / УкрПоштою / Meest Поштою / на точку видачі Розетка нашим коштом! </p>
+          <p class="text-blue">Гра вже у нас на складі! </p>
+          <p class="text-simple">Надсилання замовлень відбуватиметься Новою Поштою / УкрПоштою / Meest Поштою / на точку видачі Розетка нашим коштом! </p>
           <div class="block_blue"> 
             <p> <span>Можливий </span><span class="text-bold">самовивіз </span><span>в Одесі (вул. Новосельського, 100 або вул. Садова, 9)</span></p>
             <p> <span>Акційна пропозиція на гру зі знижкою </span><span class="text-bold">20% </span><span>триватиме </span><span class="text-bold">до 15-го квітня 2025 року. </span><span>Отже, встигніть придбати відому гру за найвигіднішою ціною! </span></p>
-          </div><a class="btn" href="#bulk-orders">Оформити передзамовлення</a>
+          </div><a class="btn" href="#order">Оформити замовлення</a>
         </div>
         <div class="block_img"> <img src="assets/images/delivery_photo.webp" alt="Photo"></div>
       </div>
@@ -329,8 +340,8 @@
               <h2>Контакти</h2>
               <div class="block_blue"> 
                 <ul class="contact_ul"> 
-                  <li class="contact_li"><span>050 489-10-20</span></li>
-                  <li class="contact_li"><span>info@planeta-igr.com</span></li>
+                  <li class="contact_li"><a href="tel:0504891020">050 489-10-20</a></li>
+                  <li class="contact_li"><a href="mailto:info@planeta-igr.com">info@planeta-igr.com</a></li>
                   <li class="contact_li">
                     <div><span class="text-bold">Магазин "Планета Ігор" - </span><span>м. Одеса, вул. Новосельского, 100</span></div>
                   </li>
@@ -341,7 +352,9 @@
                 <div class="contact_social"> <a href="https://www.instagram.com/planetaigrcom/" target="_blank"> <img src="assets/images/icon_instagram-fill.svg" alt="instagram"></a><a href="https://t.me/joinchat/AAAAAFcZ0PUDr8su7vFKOA" target="_blank"> <img src="assets/images/icon_telegram_2.svg" alt="telegram"></a><a href="viber://chat?number=%2B380504891020" target="_blank"> <img src="assets/images/icon_viber.svg" alt="viber"></a><a href="https://www.facebook.com/planetaigr/" target="_blank"> <img src="assets/images/icon_facebook-fill.svg" alt="facebook"></a></div>
               </div>
             </div>
-            <div class="block_map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5495.01787650552!2d30.729831000000004!3d46.478234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63190403ca76d%3A0x87353773ecb48830!2z0J_Qu9Cw0L3QtdGC0LAg0ZbQs9C-0YA!5e0!3m2!1suk!2sus!4v1743252941519!5m2!1suk!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="block_map"><a class="map_link" target="_blank" href="https://www.google.com/maps?ll=46.478234,30.729831&amp;z=16&amp;t=m&amp;hl=uk&amp;gl=US&amp;mapclient=apiv3&amp;cid=9742754339917957168">Подивитись на карті</a>
+              <div class="map" id="map"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -384,5 +397,6 @@
   </footer>
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw93KzVFFYZIc4JrMEV__0Rh9K4sXEaI4&amp;callback=initMap" async defer></script>
   <script src="assets/js/main.js"></script>
 </body>

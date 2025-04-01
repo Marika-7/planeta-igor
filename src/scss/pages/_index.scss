@@ -97,15 +97,33 @@
     }
     // p {}
   }
-  // .text-simple {}
-  // .link-read {}
-  .block_img img {
-    width: 416px;
-    @include screen-1024 {
-      width: 360px;
+  .block_text {
+    p {
+      margin-bottom: 24px;
     }
-    @include screen-480 {
-      width: 100%;
+  }
+  // .text-simple {}
+  .text_hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .text_show {
+    max-height: 1000px;
+  }
+  .block_img {
+    align-self: start;
+    @include screen-768 {
+      align-self: center;
+    }
+    img {
+      width: 416px;
+      @include screen-1024 {
+        width: 360px;
+      }
+      @include screen-480 {
+        width: 100%;
+      }
     }
   }
 }
@@ -157,6 +175,7 @@
     padding-top: 80px;
   }
   &>.row {
+    justify-content: space-between;
     gap: 56px;
     @include screen-1280 {
       gap: 20px;
@@ -194,6 +213,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
   }
   .text-orange {
     font-size: 20px;
@@ -261,56 +287,56 @@
       justify-self: center;
     }
   }
-  .block .row  {
-    margin-top: 44px;
-    @include screen-1024 {
-      flex-direction: column;
-    }
-    @include screen-768 {
-      flex-direction: row;
-    }
-    @include screen-480 {
-      flex-direction: column;
-    }
-  }
-  .btn {
-    width: 289px;
-    padding: 18px;
-    @include screen-1280 {
-      width: 270px;
-    }
-    @include screen-768 {
-      width: 50%;
-    }
-    @include screen-480 {
-      width: 100%;
-    }
-  }
-  .btn-invert {
-    width: 271px;
-    @include screen-1280 {
-      width: 240px;
-    }
-    @include screen-1024 {
-      width: 270px;
-    }
-    @include screen-768 {
-      width: 50%;
-    }
-    @include screen-480 {
-      width: 100%;
-    }
-  }
+  // .block .row  {
+  //   margin-top: 44px;
+  //   @include screen-1024 {
+  //     flex-direction: column;
+  //   }
+  //   @include screen-768 {
+  //     flex-direction: row;
+  //   }
+  //   @include screen-480 {
+  //     flex-direction: column;
+  //   }
+  // }
+  // .btn {
+  //   width: 289px;
+  //   padding: 18px;
+  //   @include screen-1280 {
+  //     width: 270px;
+  //   }
+  //   @include screen-768 {
+  //     width: 50%;
+  //   }
+  //   @include screen-480 {
+  //     width: 100%;
+  //   }
+  // }
+  // .btn-invert {
+  //   width: 271px;
+  //   @include screen-1280 {
+  //     width: 240px;
+  //   }
+  //   @include screen-1024 {
+  //     width: 270px;
+  //   }
+  //   @include screen-768 {
+  //     width: 50%;
+  //   }
+  //   @include screen-480 {
+  //     width: 100%;
+  //   }
+  // }
   .block_img {
+    margin: 0 auto;
     @include screen-1280 {
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
   .block_img img {
-    width: 584px;
+    width: 502px;
     @include screen-1280 {
       width: 400px;
     }
@@ -329,17 +355,16 @@
         
 // ---------- rules ----------
 .rules {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  .details {
-    max-height: 120px;
-    overflow: hidden;
-    transition: all .4s;
+  h2 {
+    text-align: center;
   }
-  .details[open] {
-    max-height: 1500px;
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
+  // details {}
+  // .details[open] {}
   .summary {
     height: 72px;
     display: flex;
@@ -378,7 +403,7 @@
   .details[open] .summary::after {
       background-image: url('../images/icon_minus.svg');
   }
-  h2 {
+  h3 {
     margin-top: 8px;
     margin-bottom: 0;
     text-align: left;
@@ -502,6 +527,7 @@
 
 // ---------- items ----------
 .items {
+  overflow: hidden;
   // h2 {}
   // img {}
   // .caption_orange {
@@ -621,7 +647,7 @@
     transition: all .5s;
     position: relative;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
     .caption_orange {
       margin-top: -30px;
@@ -1133,23 +1159,14 @@
   &_social {
     display: flex;
     gap: 15px;
-    // a {}
+    a {
+      transition: all .3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
     img {
       height: 24px;
-    }
-  }
-  .block_map {
-    width: 800px;
-    height: 480px;
-    margin-left: -50px;
-    @include screen-768 {
-      width: 100%;
-      margin-top: -50px;
-      margin-left: 0;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
     }
   }
 }

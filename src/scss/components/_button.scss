@@ -40,7 +40,8 @@
   }
 }
 
-.link-read {
+.read_btn {
+  max-height: 24px;
   color: $primary;
   font-family: El Messiri;
   font-weight: 700;
@@ -50,11 +51,19 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  overflow: hidden;
+  transition: all .3s;
   &::after {
     content: url('../images/arrow_fill_down.svg');
     width: 24px;
     height: 24px;
   }
+  &_hide {
+    max-height: 0;
+  }
+}
+.text_hide .read_btn::after {
+  transform: rotate(180deg);
 }
 
 .download {

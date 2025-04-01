@@ -13,6 +13,17 @@ $(document).ready(function() {
     $('.mobile_menu').removeClass('mobile_menu_show');
   });
 
+  // ---------- text_hide ----------
+  $('#read_show').on('click', function() {
+    $('#text_hide').addClass('text_show');
+    $(this).addClass('read_btn_hide');
+  });
+  
+  $('#read_hide').on('click', function() {
+    $('#text_hide').removeClass('text_show');
+    $('#read_show').removeClass('read_btn_hide');
+  });
+
   // ---------- scroll to up ----------
   $(window).scroll(function() {
     if($(this).scrollTop() > 1000) {
@@ -40,6 +51,18 @@ $(document).ready(function() {
         }
       }
     ]
+  });
+  
+  // ---------- add video ----------
+  $('.btn-play').on('click', function() {
+    const slideScreen = $(this).siblings('.slide_screen');
+    const link = slideScreen.attr('data-video');
+    slideScreen.append(`
+      <iframe width="100%" height="100%" src="${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `);
+    slideScreen.find('.slide_img').addClass('opacity');
+    slideScreen.siblings('.caption_blue').addClass('opacity');
+    $(this).addClass('opacity');
   });
 });
 
